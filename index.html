@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toca da Tilápia - Peixe Fresco, Sabor de Verdade | Americana - SP</title>
+  <meta name="description" content="Restaurante Toca da Tilápia em Americana - SP. Especializado em peixe fresco, tilápia frita inteira crocante, comida caseira e ambiente acolhedor para toda a família.">
+  <link rel="icon" type="image/png" href="assets/images/logo-original.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Pacifico&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <aside class="top-bar" aria-label="Informações de contato e horário">
+    <div class="container top-bar-container">
+      <div class="top-bar-item top-address">
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Cabo+Oswaldo+de+Moraes,+391,+Americana+-+SP" target="_blank" rel="noopener noreferrer">
+          Rua Cabo Oswaldo de Moraes, 391, Americana - SP
+        </a>
+      </div>
+
+      <div class="top-bar-item top-hours">
+        <i class="fa-regular fa-clock" aria-hidden="true"></i>
+        <span>Qua - Sex: 17h–23h <span class="sep">|</span> Sáb: 11h–23h <span class="sep">|</span> Dom: 11h–15h</span>
+      </div>
+
+      <div class="top-bar-right">
+        <div class="top-bar-item top-phone">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <a href="tel:1936046400" class="phone-link">(19) 3604-6400</a>
+        </div>
+        <div class="top-bar-social">
+          <span class="social-divider">|</span>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Siga nosso Instagram" class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/551936046400?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Toca%20da%20Til%C3%A1pia!" target="_blank" rel="noopener noreferrer" aria-label="Fale pelo WhatsApp" class="social-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Header & Navigation -->
+  <header class="main-header" id="header">
+    <div class="container header-container">
+      <!-- Logo Oficial Toca da Tilápia -->
+      <a href="#inicio" class="logo-link" aria-label="Toca da Tilápia - Voltar ao início">
+        <div class="logo-wrapper">
+          <img src="assets/images/logo-original.png" alt="Logo Oficial Toca da Tilápia" class="site-logo">
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Navegação Principal">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#inicio" class="nav-link active">INÍCIO</a>
+          </li>
+          <li class="nav-item">
+            <a href="#cardapio" class="nav-link">CARDÁPIO</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobre" class="nav-link">SOBRE NÓS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#horario" class="nav-link">HORÁRIO</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" class="nav-link">CONTATO</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- CTA Button Pedido -->
+      <div class="header-actions">
+        <a href="tel:1936046400" class="btn btn-order" id="btn-header-order" title="Ligue para fazer seu pedido: (19) 3604-6400">
+          <i class="fa-solid fa-utensils"></i>
+          <span>FAÇA SEU PEDIDO</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-content">
+        <div class="mobile-nav-header">
+          <div class="mobile-logo-wrap">
+            <img src="assets/images/logo-original.png" alt="Logo Toca da Tilápia" class="mobile-logo">
+            <span class="mobile-brand-name">Toca da Tilápia</span>
+          </div>
+          <button class="mobile-nav-close" id="menu-close" aria-label="Fechar menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <ul class="mobile-nav-list">
+          <li><a href="#inicio" class="mobile-link active"><i class="fa-solid fa-house"></i> Início</a></li>
+          <li><a href="#cardapio" class="mobile-link"><i class="fa-solid fa-fish"></i> Cardápio</a></li>
+          <li><a href="#sobre" class="mobile-link"><i class="fa-solid fa-users"></i> Sobre Nós</a></li>
+          <li><a href="#horario" class="mobile-link"><i class="fa-solid fa-clock"></i> Horários</a></li>
+          <li><a href="#contato" class="mobile-link"><i class="fa-solid fa-location-dot"></i> Contato & Localização</a></li>
+        </ul>
+
+        <div class="mobile-nav-footer">
+          <a href="tel:1936046400" class="btn btn-order btn-block">
+            <i class="fa-solid fa-utensils"></i>
+            <span>FAÇA SEU PEDIDO: (19) 3604-6400</span>
+          </a>
+          <div class="mobile-info-snippet">
+            <p><i class="fa-solid fa-location-dot"></i> Rua Cabo Oswaldo de Moraes, 391 - Americana/SP</p>
+            <p><i class="fa-regular fa-clock"></i> Qua - Sex 17h–23h | Sáb 11h–23h | Dom 11h–15h</p>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-backdrop" id="mobile-backdrop"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION - Design Fiel à Imagem de Referência -->
+    <section class="hero-section" id="inicio">
+      <!-- Water splash background decorative elements -->
+      <div class="hero-water-bg" aria-hidden="true">
+        <div class="water-glow"></div>
+        <div class="water-splash splash-1"></div>
+        <div class="water-splash splash-2"></div>
+        <div class="water-splash splash-3"></div>
+        <div class="water-droplets">
+          <span class="drop drop-1"></span>
+          <span class="drop drop-2"></span>
+          <span class="drop drop-3"></span>
+          <span class="drop drop-4"></span>
+          <span class="drop drop-5"></span>
+        </div>
+      </div>
+
+      <div class="container hero-container">
+        <!-- Hero Left Column -->
+        <div class="hero-content">
+          <span class="hero-pretitle">RESTAURANTE</span>
+          <h1 class="hero-title">
+            <span class="title-toca">Toca da</span>
+            <span class="title-tilapia-wrap">
+              <span class="title-tilapia">Tilápia</span>
+              <!-- Onda decorativa sob a palavra Tilápia exatamente como na referência -->
+              <svg class="tilapia-wave-accent" viewBox="0 0 240 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 14C35 5 70 20 105 12C140 4 175 18 210 10C222 7 232 5 238 6C232 10 216 17 195 19C155 23 125 10 88 18C55 25 22 21 4 14Z" fill="#0099cc" />
+                <path d="M12 17C45 9 82 22 118 15C154 8 188 20 226 13C210 18 178 23 142 20C104 17 68 25 12 17Z" fill="#38bdf8" opacity="0.6"/>
+              </svg>
+            </span>
+          </h1>
+
+          <p class="hero-punchline">Peixe fresco, sabor de verdade!</p>
+
+          <p class="hero-description">
+            Uma experiência gastronômica completa com pratos deliciosos e um ambiente acolhedor.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#cardapio" class="btn btn-hero-order">
+              <i class="fa-solid fa-utensils"></i>
+              <span>VER CARDÁPIO</span>
+            </a>
+            <a href="#contato" class="btn btn-hero-location">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>NOSSA LOCALIZAÇÃO</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Column - Fotografia Oficial da Tilápia Frita -->
+        <div class="hero-visual">
+          <div class="dish-showcase">
+            <!-- Efeito de splash de água ao redor do prato -->
+            <div class="dish-splash-ring" aria-hidden="true"></div>
+            <div class="dish-glow" aria-hidden="true"></div>
+
+            <!-- Imagem oficial da Tilápia Frita Inteira com guarnição -->
+            <div class="dish-image-wrapper">
+              <img src="assets/images/tilapia-prato-transparente.png" 
+                   alt="Prato Destaque: Tilápia inteira frita crocante servida com salada de alface, rodelas de tomate e limões" 
+                   class="dish-img"
+                   loading="eager"
+                   fetchpriority="high">
+            </div>
+
+            <!-- Gotas e brilhos dinâmicos ao redor da fotografia -->
+            <div class="dish-droplet droplet-1" aria-hidden="true"></div>
+            <div class="dish-droplet droplet-2" aria-hidden="true"></div>
+            <div class="dish-droplet droplet-3" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Destaques inferiores da Hero Section - Exatamente como na referência -->
+      <div class="hero-bottom-bar">
+        <div class="container hero-bottom-container">
+          <!-- Ilustração do Peixe e Splash no canto esquerdo -->
+          <div class="fish-illustration-wrap" aria-hidden="true">
+            <svg class="fish-svg" viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g stroke="#07355b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Peixe saltando -->
+                <path d="M30 65C38 45 62 30 95 32C125 34 145 52 152 58C142 62 135 70 134 78C120 74 100 78 85 75C60 70 42 75 30 65Z" fill="rgba(255,255,255,0.7)"/>
+                <!-- Cauda do peixe -->
+                <path d="M30 65L12 52C16 63 16 72 10 82L30 68" fill="rgba(2, 132, 199, 0.2)"/>
+                <!-- Guelra e Olho -->
+                <circle cx="132" cy="50" r="3" fill="#07355b"/>
+                <path d="M120 44C122 52 118 60 114 66"/>
+                <!-- Nadadeiras -->
+                <path d="M85 32C88 22 96 18 102 20C98 26 96 30 95 33"/>
+                <path d="M78 74C75 84 82 88 88 84C86 78 85 76 84 74"/>
+                <!-- Linha lateral e escamas sutis -->
+                <path d="M50 60C70 56 100 56 125 58" stroke-dasharray="2 4"/>
+              </g>
+              <!-- Gotas de água espirrando ao redor do peixe -->
+              <g fill="#0284c7">
+                <circle cx="22" cy="38" r="3.5"/>
+                <circle cx="45" cy="22" r="2.5"/>
+                <circle cx="68" cy="16" r="3"/>
+                <circle cx="15" cy="90" r="2"/>
+                <path d="M135 25C135 25 138 29 135 32C132 29 135 25 135 25Z"/>
+                <path d="M110 12C110 12 114 17 110 20C106 17 110 12 110 12Z"/>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Três Destaques com Ícones em Círculos Azul-Marinho -->
+          <div class="hero-features-list">
+            <div class="feature-item">
+              <div class="feature-icon-circle">
+                <i class="fa-solid fa-fish"></i>
+              </div>
+              <span class="feature-text">Peixe Fresco</span>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-circle">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <span class="feature-text">Comida Caseira</span>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-circle">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <span class="feature-text">Sabor Incomparável</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ondas do Mar em SVG no rodapé da Hero Section -->
+      <div class="hero-wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" class="wave-svg">
+          <!-- Onda Azul Turquesa Claro -->
+          <path d="M0,32L48,42.7C96,53,192,75,288,74.7C384,75,480,53,576,42.7C672,32,768,32,864,48C960,64,1056,96,1152,96C1248,96,1344,64,1392,48L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="#38bdf8" opacity="0.3"></path>
+          <!-- Onda Azul Marinho Médio -->
+          <path d="M0,64L48,58.7C96,53,192,43,288,48C384,53,480,75,576,80C672,85,768,75,864,64C960,53,1056,43,1152,48C1248,53,1344,75,1392,85.3L1440,96L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="#005088"></path>
+          <!-- Onda Azul Marinho Profundo -->
+          <path d="M0,80L48,85.3C96,91,192,101,288,96C384,91,480,69,576,64C672,59,768,69,864,74.7C960,80,1056,80,1152,74.7C1248,69,1344,59,1392,53.3L1440,48L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="#032545"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- SEÇÃO CARDÁPIO (Âncora #cardapio) -->
+    <section class="section section-menu" id="cardapio">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">GASTRONOMIA ESPECIALIZADA</span>
+          <h2 class="section-title">Nossa Grande Especialidade</h2>
+          <p class="section-subtitle">
+            O sabor autêntico do peixe fresco preparado com receita caseira tradicional.
+          </p>
+
+          <!-- Abas de Navegação do Cardápio -->
+          <div class="menu-tabs-nav" role="tablist" aria-label="Abas do Cardápio">
+            <button class="menu-tab-btn active" role="tab" aria-selected="true" aria-controls="tab-destaque" data-tab="tab-destaque" id="tab-btn-destaque">
+              <i class="fa-solid fa-fish"></i>
+              <span>Destaque: Isca de Tilápia (450g)</span>
+            </button>
+            <button class="menu-tab-btn" role="tab" aria-selected="false" aria-controls="tab-pdf" data-tab="tab-pdf" id="tab-btn-pdf">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>Cardápio Completo (PDF A4)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CONTEÚDO DAS ABAS -->
+        <div class="menu-tabs-content">
+          <!-- ABA 1: DESTAQUE ISCA DE TILÁPIA (450G) -->
+          <div class="menu-tab-pane active" id="tab-destaque" role="tabpanel" aria-labelledby="tab-btn-destaque">
+            <div class="menu-highlight-card">
+              <div class="menu-card-image">
+                <img src="assets/images/isca-de-tilapia.jpg" alt="Isca de Tilápia frita crocante - Porção de 450g da Toca da Tilápia" class="menu-photo" loading="lazy">
+                <span class="badge-special">⭐ Porção Destaque • 450g</span>
+              </div>
+
+              <div class="menu-card-details">
+                <div class="dish-tag">DESTAQUE DO RESTAURANTE</div>
+                <h3 class="dish-name">Isca de Tilápia – 450g</h3>
+                <p class="dish-description">
+                  Porção generosa de 450g de filé de tilápia fresca, cortada em tiras suculentas, temperada com receita exclusiva da casa e frita na hora. Casquinha dourada sequinha e crocante, com peixe tenro, macio e sem espinhas.
+                </p>
+
+                <ul class="dish-features-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span><strong>Porção Generosa (450g):</strong> Farta e perfeita para compartilhar momentos especiais em família ou amigos.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span><strong>100% Filé de Tilápia Fresca:</strong> Sem espinhas, com corte selecionado e garantia diária de procedência.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span><strong>Guarnição Tradicional:</strong> Acompanhada de folhas de alface fresca selecionada e fatias de limão taiti.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span><strong>Fritura no Ponto Exato:</strong> Óleo limpo e controle de temperatura que garantem uma porção sequinha e muito crocante.</span>
+                  </li>
+                </ul>
+
+                <div class="menu-cta-box">
+                  <div class="cta-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Deseja ver todas as opções ou fazer seu pedido agora?</span>
+                  </div>
+                  <div class="cta-buttons-group">
+                    <a href="tel:1936046400" class="btn btn-order">
+                      <i class="fa-solid fa-phone"></i>
+                      <span>LIGAR: (19) 3604-6400</span>
+                    </a>
+                    <a href="https://wa.me/551936046400?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20uma%20por%C3%A7%C3%A3o%20de%20Isca%20de%20Til%C3%A1pia%20(450g)!" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                      <span>PEDIR NO WHATSAPP</span>
+                    </a>
+                    <button type="button" class="btn btn-outline-navy" data-switch-tab="tab-pdf">
+                      <i class="fa-solid fa-file-pdf"></i>
+                      <span>VER CARDÁPIO EM PDF</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ABA 2: CARDÁPIO COMPLETO EM PDF (FOLHAS FORMATO A4) -->
+          <div class="menu-tab-pane" id="tab-pdf" role="tabpanel" aria-labelledby="tab-btn-pdf">
+            <div class="pdf-viewer-card">
+              <!-- Barra Superior de Controle do PDF -->
+              <div class="pdf-toolbar">
+                <div class="pdf-doc-info">
+                  <div class="pdf-icon-badge">
+                    <i class="fa-solid fa-file-pdf"></i>
+                  </div>
+                  <div>
+                    <h3 class="pdf-doc-title">Cardápio Oficial Toca da Tilápia</h3>
+                    <p class="pdf-doc-subtitle">Documento oficial preparado em páginas tamanho <strong>A4</strong></p>
+                  </div>
+                </div>
+
+                <div class="pdf-actions">
+                  <a href="assets/docs/cardapio.pdf" download="Cardapio-Toca-da-Tilapia.pdf" class="btn btn-outline-navy btn-sm" title="Baixar arquivo em PDF">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Baixar PDF</span>
+                  </a>
+                  <a href="assets/docs/cardapio.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-navy btn-sm" title="Abrir PDF em nova aba para leitura completa">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <span>Abrir em Nova Aba</span>
+                  </a>
+                  <a href="tel:1936046400" class="btn btn-order btn-sm">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Fazer Pedido: (19) 3604-6400</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Quadro com Proporção de Folha A4 para visualização -->
+              <div class="pdf-embed-wrapper">
+                <div class="pdf-a4-sheet-container">
+                  <iframe 
+                    src="assets/docs/cardapio.pdf#view=FitH" 
+                    class="pdf-iframe" 
+                    title="Visualizador do Cardápio em PDF - Formato A4"
+                    loading="lazy">
+                  </iframe>
+                </div>
+              </div>
+
+              <!-- Rodapé informativo do visualizador de PDF -->
+              <div class="pdf-footer-help">
+                <div class="pdf-instructions">
+                  <i class="fa-solid fa-circle-question"></i>
+                  <span>Todas as folhas do cardápio são configuradas no tamanho <strong>A4</strong>. Para atualizar com o seu arquivo definitivo, substitua o documento <code>assets/docs/cardapio.pdf</code>.</span>
+                </div>
+                <div class="pdf-direct-mobile">
+                  <a href="assets/docs/cardapio.pdf" target="_blank" rel="noopener noreferrer" class="link-action">
+                    Visualizar PDF em tela cheia <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE NÓS (Âncora #sobre) -->
+    <section class="section section-about" id="sobre">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text-content">
+            <span class="section-tag">CONHEÇA NOSSA HISTÓRIA</span>
+            <h2 class="section-title">Bem-vindos à Toca da Tilápia</h2>
+            <h3 class="about-lead">Um ambiente familiar, descontraído e apaixonado pelo verdadeiro sabor do peixe.</h3>
+            
+            <p>
+              Localizada em Americana – SP, a <strong>Toca da Tilápia</strong> nasceu com uma missão simples e saborosa: oferecer aos nossos clientes e suas famílias o prazer de saborear peixe verdadeiramente fresco em um ambiente agradável, simples e acolhedor.
+            </p>
+            <p>
+              Nosso lema — <em>"Peixe - Alimento Saudável!"</em> — orienta cada detalhe do nosso preparo. Trabalhamos exclusivamente com ingredientes selecionados, óleo sempre limpo e ponto de fritura preciso, garantindo pratos sequinhos, crocantes e cheios de sabor.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="pillar-text">
+                  <h4>Ambiente Familiar</h4>
+                  <p>Espaço acolhedor e descontraído para reunir quem você ama.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <i class="fa-solid fa-shield-heart"></i>
+                </div>
+                <div class="pillar-text">
+                  <h4>Qualidade & Frescor</h4>
+                  <p>Controle rigoroso de qualidade em cada tilápia servida.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <i class="fa-solid fa-kitchen-set"></i>
+                </div>
+                <div class="pillar-text">
+                  <h4>Tradição Caseira</h4>
+                  <p>O carinho e a atenção de uma comida feita com amor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-badge-content">
+            <div class="about-logo-card">
+              <div class="logo-circle-holder">
+                <img src="assets/images/logo-original.png" alt="Selo Oficial Toca da Tilápia" class="about-logo-img">
+              </div>
+              <h4 class="about-card-title">Toca da Tilápia</h4>
+              <p class="about-card-motto">Peixe - Alimento Saudável !!!</p>
+              <div class="about-card-divider"></div>
+              <p class="about-location-tag">
+                <i class="fa-solid fa-location-dot"></i> Americana – SP
+              </p>
+              <a href="#contato" class="btn btn-outline-navy">
+                <i class="fa-solid fa-map-location-dot"></i>
+                COMO CHEGAR
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO HORÁRIOS (Âncora #horario) -->
+    <section class="section section-hours" id="horario">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">PROGRAME SUA VISITA</span>
+          <h2 class="section-title">Horários de Funcionamento</h2>
+          <p class="section-subtitle">
+            Venha desfrutar de momentos deliciosos com a sua família nos nossos horários de atendimento.
+          </p>
+          
+          <!-- Live Status Indicator -->
+          <div class="status-indicator-box" id="restaurant-status">
+            <span class="status-dot"></span>
+            <span class="status-label" id="status-text">Verificando horário...</span>
+          </div>
+        </div>
+
+        <div class="hours-cards-grid">
+          <!-- Quarta a Sexta -->
+          <div class="hours-card" data-day="qua-sex">
+            <div class="hours-card-icon">
+              <i class="fa-solid fa-moon"></i>
+            </div>
+            <h3 class="hours-days">Quarta a Sexta</h3>
+            <span class="hours-period">Jantar</span>
+            <p class="hours-time">17h às 23h</p>
+            <div class="hours-card-footer">
+              <span class="badge-open">Atendimento Presencial & Pedidos</span>
+            </div>
+          </div>
+
+          <!-- Sábado -->
+          <div class="hours-card featured" data-day="sab">
+            <div class="hours-badge-highlight">Fim de Semana Completo</div>
+            <div class="hours-card-icon">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <h3 class="hours-days">Sábado</h3>
+            <span class="hours-period">Almoço & Jantar</span>
+            <p class="hours-time">11h às 23h</p>
+            <div class="hours-card-footer">
+              <span class="badge-open">Dia Inteiro de Sabor</span>
+            </div>
+          </div>
+
+          <!-- Domingo -->
+          <div class="hours-card" data-day="dom">
+            <div class="hours-card-icon">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <h3 class="hours-days">Domingo</h3>
+            <span class="hours-period">Almoço Especial em Família</span>
+            <p class="hours-time">11h às 15h</p>
+            <div class="hours-card-footer">
+              <span class="badge-open">Tradicional Almoço de Domingo</span>
+            </div>
+          </div>
+
+          <!-- Segunda e Terça -->
+          <div class="hours-card closed" data-day="seg-ter">
+            <div class="hours-card-icon">
+              <i class="fa-solid fa-door-closed"></i>
+            </div>
+            <h3 class="hours-days">Segunda e Terça</h3>
+            <span class="hours-period">Descanso Semanal</span>
+            <p class="hours-time">Fechado</p>
+            <div class="hours-card-footer">
+              <span class="badge-closed">Retornamos na Quarta às 17h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO E LOCALIZAÇÃO (Âncora #contato) -->
+    <section class="section section-contact" id="contato">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">ESTAMOS ESPERANDO POR VOCÊ</span>
+          <h2 class="section-title">Localização & Contato</h2>
+          <p class="section-subtitle">
+            Venha nos fazer uma visita ou entre em contato direto pelo telefone para pedidos e dúvidas.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Card Informações -->
+          <div class="contact-info-panel">
+            <div class="info-card-block">
+              <div class="info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="info-content">
+                <h4>Endereço</h4>
+                <p>Rua Cabo Oswaldo de Moraes, 391</p>
+                <p>Americana – SP, CEP 13465-170</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Rua+Cabo+Oswaldo+de+Moraes,+391,+Americana+-+SP" target="_blank" rel="noopener noreferrer" class="link-action">
+                  Ver rota no Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="info-card-block">
+              <div class="info-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="info-content">
+                <h4>Telefone para Pedidos</h4>
+                <p><a href="tel:1936046400" class="tel-number">(19) 3604-6400</a></p>
+                <p class="tel-sub">Atendimento direto durante o horário de funcionamento</p>
+                <a href="tel:1936046400" class="btn btn-order btn-sm">
+                  <i class="fa-solid fa-phone-volume"></i> Ligar Agora
+                </a>
+              </div>
+            </div>
+
+            <div class="info-card-block">
+              <div class="info-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="info-content">
+                <h4>WhatsApp</h4>
+                <p><a href="https://wa.me/551936046400?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20da%20Toca%20da%20Til%C3%A1pia!" target="_blank" rel="noopener noreferrer" class="tel-number">(19) 3604-6400</a></p>
+                <p class="tel-sub">Mensagens rápidas e pedidos express</p>
+                <a href="https://wa.me/551936046400?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Toca%20da%20Til%C3%A1pia!" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                  <i class="fa-brands fa-whatsapp"></i> Iniciar Conversa
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mapa / Rota Interativa -->
+          <div class="contact-map-panel">
+            <div class="map-card-container">
+              <div class="map-header">
+                <div class="map-title-wrap">
+                  <i class="fa-solid fa-map-pin"></i>
+                  <span>Toca da Tilápia no Mapa</span>
+                </div>
+                <a href="https://www.google.com/maps/search/?api=1&query=Rua+Cabo+Oswaldo+de+Moraes,+391,+Americana+-+SP" target="_blank" rel="noopener noreferrer" class="btn btn-map-external">
+                  <i class="fa-solid fa-diamond-turn-right"></i> Como Chegar
+                </a>
+              </div>
+
+              <!-- Iframe Google Maps Oficial -->
+              <div class="map-responsive-frame">
+                <iframe 
+                  title="Localização da Toca da Tilápia no Google Maps"
+                  src="https://maps.google.com/maps?q=Rua%20Cabo%20Oswaldo%20de%20Moraes,%20391,%20Americana%20-%20SP&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  width="100%" 
+                  height="360" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+
+              <div class="map-footer-notes">
+                <p><i class="fa-solid fa-car-side"></i> Fácil acesso e estacionamento nas imediações.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé Institucional -->
+  <footer class="site-footer">
+    <div class="footer-wave-top" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,0 C360,40 1080,40 1440,0 L1440,60 L0,60 Z" fill="#03223f"></path>
+      </svg>
+    </div>
+
+    <div class="container footer-container">
+      <div class="footer-brand-col">
+        <div class="footer-logo-row">
+          <img src="assets/images/logo-original.png" alt="Toca da Tilápia" class="footer-logo">
+          <div>
+            <h3 class="footer-brand-name">Toca da Tilápia</h3>
+            <p class="footer-brand-slogan">Peixe fresco, sabor de verdade!</p>
+          </div>
+        </div>
+        <p class="footer-bio">
+          O restaurante especializado em peixes em Americana – SP. Sabor caseiro, ambiente familiar acolhedor e a melhor tilápia da região.
+        </p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Navegação</h4>
+        <ul class="footer-nav">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#horario">Horários de Atendimento</a></li>
+          <li><a href="#contato">Localização & Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4 class="footer-col-title">Atendimento</h4>
+        <p><i class="fa-solid fa-location-dot"></i> Rua Cabo Oswaldo de Moraes, 391 - Americana/SP</p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:1936046400">(19) 3604-6400</a></p>
+        <p><i class="fa-solid fa-clock"></i> Qua - Sex: 17h–23h | Sáb: 11h–23h | Dom: 11h–15h</p>
+        
+        <div class="footer-social-row">
+          <a href="https://wa.me/551936046400" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; 2026 Toca da Tilápia. Todos os direitos reservados.</p>
+        <p class="footer-dev-note">Americana – SP | Especialidade em Peixe Fresco</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick WhatsApp / Phone Button for mobile and desktop -->
+  <aside class="floating-contact" aria-label="Ações rápidas de contato">
+    <a href="https://wa.me/551936046400?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Toca%20da%20Til%C3%A1pia!" 
+       class="float-btn float-whatsapp" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       title="Fale conosco pelo WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="float-tooltip">Pedir no WhatsApp</span>
+    </a>
+    <a href="tel:1936046400" 
+       class="float-btn float-phone" 
+       title="Ligue para nós: (19) 3604-6400">
+      <i class="fa-solid fa-phone"></i>
+      <span class="float-tooltip">Ligar (19) 3604-6400</span>
+    </a>
+  </aside>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

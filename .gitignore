@@ -1,0 +1,13 @@
+# Arquivos temporários e auxiliares
+serve.ps1
+cutout.ps1
+feather.ps1
+test-crops.ps1
+assets/images/fish-crop.png
+assets/images/splash-crop.png
+assets/images/referencia-design.jpg
+preview-desktop.png
+preview-mobile.png
+*.tmp
+.DS_Store
+Thumbs.db
